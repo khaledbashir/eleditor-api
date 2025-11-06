@@ -18,6 +18,8 @@ import syncRoutes from './routes/sync';
 dotenv.config();
 
 const app = express();
+
+// Trust proxy for Easypanel\napp.set("trust proxy", true);
 const PORT = process.env['PORT'] || 3002;
 
 // Rate limiting
